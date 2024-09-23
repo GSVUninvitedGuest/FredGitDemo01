@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact</title>
+
+<base href="./">
+
+<script>
+    function setPaths() {
+        const cssLink = document.createElement('link');
+        cssLink.rel = 'stylesheet';
+        cssLink.href = './CSS/styles.css';
+        document.head.appendChild(cssLink);
+
+        const scriptTag = document.createElement('script');
+        scriptTag.src = './JavaScript/scripts.js';
+        scriptTag.defer = true;
+        document.head.appendChild(scriptTag);
+    }
+
+    window.onload = setPaths;
+</script>
+
+<script src="./JavaScript/scripts.js" defer></script>
+
+
+<link rel="stylesheet" href="./CSS/styles.css">
+
+  </style>
+<nav class="navbar">
+    <img src="./assets/images/itc_logo_small.png" alt="Logo" class="logo">
+    <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./blog01.html">Blog</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+  <div class="image-container">
+    <img src="./assets/images/itccontact04.png" alt="Contact logo">
+</div>
+</head>
+
+<body>
+
+<br>
+    
+    <label class="switch">
+        <input type="checkbox" id="modeToggle">
+        <span class="slider round"></span>
+    </label>
+<br>
+<div class="welcomebar">
+    <img src="./assets/images/get_in_touch_01.png" alt="Get in touch" class="logo">
+</div>
+<br>
+
+<div class="container">
+    <div class="row">
+        <div class="cell text-block">
+            <p>If you would like to get in touch with us here at Into The Cosmos, we would love to hear from you. (I know we don't have an actual phone number listed. We just loved the video.)</p>
+            <br>
+            <p>Instagram : @intothecosmospix</p>  
+            <br>
+            <p>X : @intothecosmosblog</p>  
+            <br>
+            <p>Email : contact@intothecosmos.com</p>       
+        </div>
+        <div class="cell video-block">
+            <video width="100%" controls autoplay loop>
+                <source src="./assets/videos/get_in_touch01.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+</div>
+<br>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+
+    <base href="./">
+
+    
+    <script>
+        function setPaths() {
+            const cssLink = document.createElement('link');
+            cssLink.rel = 'stylesheet';
+            cssLink.href = './CSS/styles.css';
+            document.head.appendChild(cssLink);
+    
+            const scriptTag = document.createElement('script');
+            scriptTag.src = './JavaScript/scripts.js';
+            scriptTag.defer = true;
+            document.head.appendChild(scriptTag);
+        }
+    
+        window.onload = setPaths;
+    </script>
+
+<link rel="stylesheet" href="./styles.css">
+
+<script src="./JavaScript/scripts.js" defer></script>
+    
+
+<nav class="navbar">
+    <img src="./assets/images/itc_logo_small.png" alt="Logo" class="logo">
+    <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./blog01.html">Blog</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+    </ul>
+</nav>
+    <div class="image-container">
+        <img src="./assets/images/itcblog04.png" alt="Blog">
+    </div>
+
+</head>
+<body>
+    
+    <label class="switch">
+        <input type="checkbox" id="modeToggle">
+        <span class="slider round"></span>
+    </label>
+    
+<br>
+<div class="welcomebar">
+    <img src="./assets/images/add_your_own_blog_post_01.png" alt="Add your own blog post" class="logo">
+</div>
+
+ <div class="form-container">
+    <p>Here at Into The Cosmos, we encourage our readers to get involved. If you have a topic you'd like to post about, feel free to use the form below to write your own entry and submit it for inclusion in the blog. People I know said I was crazy letting random people off the internet post whatever they like to my site, but I trust you, dear reader, to use this privilege responsibly. Please refrain from posting any flat Earth propaganda.</p>
+    <form id="blogForm">
+        <label for="author">Author:</label>
+        <input type="text" id="author" name="author" required>
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required>
+        <label for="content">Content:</label>
+        <textarea id="content" name="content" required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+<br>
+<div class="welcomebar">
+    <img src="./assets/images/recentposts01.png" alt="Recent blog posts" class="logo">
+</div>
+<br>
+<div class="blog-container">
+       
+        <div id="blog_post_01" class="blog-post">
+            <img src="./assets/images/asteroids_wide_01.png" alt="Asteroid field in space" class="blog-image">
+            <div class="blog-text">
+                <h2>AstroForge: Pioneering the Future of Space Mining</h2>
+                <p class="date">Posted on: September 1, 2024</p>
+                <p>AstroForge, a California-based startup, is making significant strides in the realm of space mining. Founded with the ambitious goal of extracting valuable metals from asteroids, the company is now on the brink of launching its first private mission to mine a near-Earth asteroid1.
+                    AstroForge’s upcoming mission, named Vestri, aims to dock a 200 kg production vehicle on a target asteroid to assess its composition and extract metals like cobalt, nickel, and platinum-group elements1. This mission is a crucial step towards commercializing space mining and addressing Earth’s dwindling resources. The Vestri spacecraft, developed in-house, will be launched on Intuitive Machines’ third mission in 20251.
+                    The company has already achieved several milestones, including a successful $40 million Series A funding round, which brings their total funding to $55 million1. This financial boost will enable AstroForge to continue its innovative work and move closer to making off-world resources accessible to all humankind.
+                    AstroForge’s efforts are not just about mining; they represent a vision for a sustainable future where space resources can help meet the growing demand for critical metals essential for clean energy technologies1. As they prepare for their groundbreaking mission, AstroForge is setting the stage for a new era in space exploration and resource management.
+                    </p>
+            </div>
+        </div>
+        <div id="blog_post_02" class="blog-post">
+            <img src="./assets/images/mars_rover_wide_01.png" alt="Mars Rover" class="blog-image">
+            <div class="blog-text">
+                <h2>A Brief History of Mars Rover Missions</h2>
+                <p class="date">Posted on: September 2, 2024</p>
+                <p>
+                    Mars rover missions have been pivotal in our quest to understand the Red Planet. The journey began with NASA’s Sojourner in 1997, a small rover that demonstrated the feasibility of robotic exploration on Mars1. Sojourner’s success paved the way for more advanced missions.
+                    In 2004, NASA launched the twin rovers Spirit and Opportunity. These rovers were tasked with finding evidence of past water activity on Mars. Spirit operated until 2010, while Opportunity exceeded all expectations, continuing its mission until 20181. Both rovers provided substantial evidence that Mars once had conditions suitable for liquid water.
+                    The next significant milestone was the Curiosity rover, which landed in 2012. Curiosity’s mission was to assess Mars’ habitability, and it discovered complex organic molecules and methane, suggesting that the planet could have supported microbial life in the past1.
+                    In 2021, NASA’s Perseverance rover joined the Martian surface. Equipped with advanced scientific instruments, Perseverance aims to search for signs of ancient life and collect samples for future return to Earth1. It also carried the Ingenuity helicopter, which made history with the first powered flight on another planet1.
+                    These missions have transformed our understanding of Mars, revealing a planet that was once more Earth-like and potentially habitable. As we look to the future, these rovers lay the groundwork for human exploration and the possibility of one day setting foot on Mars.
+                </p>
+            </div>
+        </div>
+        <div id="blog_post_03" class="blog-post">
+            <img src="./assets/images/rocket_engines_wide_01.png" alt="Prototype rocket engine" class="blog-image">
+            <div class="blog-text">
+                <h2>Exploring Theoretical Space Propulsion Systems</h2>
+                <p class="date">Posted on: September 3, 2024</p>
+                <p>
+                    The quest for advanced space propulsion systems is driving researchers to explore groundbreaking concepts that could revolutionize space travel. Among these, warp drives and nuclear propulsion stand out as particularly promising.
+                    Warp drives, inspired by science fiction, aim to enable faster-than-light travel by bending space-time around a spacecraft. Recent theoretical work by physicists, such as those at the University of Göttingen, has proposed new configurations of space-time curvature called “solitons” or “warp bubbles.” These structures could theoretically allow for superluminal travel using only positive energy sources, bypassing the need for exotic negative energy1.
+                    Another exciting area of research is nuclear propulsion. This includes both nuclear thermal propulsion (NTP) and nuclear electric propulsion (NEP). NTP systems use nuclear reactors to heat a propellant, producing thrust more efficiently than traditional chemical rockets. NEP systems, on the other hand, generate electricity from nuclear reactors to power electric thrusters, offering high efficiency for long-duration missions2.
+                    Additionally, solar sails are being explored as a means of propulsion. These sails harness the pressure of sunlight to propel spacecraft, potentially allowing for continuous acceleration over long distances2.
+                    These theoretical propulsion systems, while still in the research phase, hold the potential to drastically reduce travel times within our solar system and beyond. As scientists continue to push the boundaries of what’s possible, the dream of interstellar travel edges closer to reality.
+                    </p>
+            </div>
+        </div>
+    </div>
+
+   
+</body>
+</html>

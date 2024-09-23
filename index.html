@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Into The Cosmos</title>
+
+<base href="./">
+
+<script>
+    function setPaths() {
+        const cssLink = document.createElement('link');
+        cssLink.rel = 'stylesheet';
+        cssLink.href = './CSS/styles.css';
+        document.head.appendChild(cssLink);
+
+        const scriptTag = document.createElement('script');
+        scriptTag.src = './JavaScript/scripts.js';
+        scriptTag.defer = true;
+        document.head.appendChild(scriptTag);
+    }
+
+    window.onload = setPaths;
+</script>
+
+<script src="./JavaScript/scripts.js" defer></script>
+
+
+<link rel="stylesheet" href="./CSS/styles.css">
+
+  </style>
+<nav class="navbar">
+    <img src="./assets/images/itc_logo_small.png" alt="Logo" class="logo">
+    <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./blog01.html">Blog</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+  <div class="image-container">
+    <img src="./assets/images/itclogo03.png" alt="Into the cosmos logo">
+</div>
+
+
+</head>
+
+<body>
+    <br>
+    
+    <label class="switch">
+        <input type="checkbox" id="modeToggle">
+        <span class="slider round"></span>
+    </label>
+<br>
+<div class="welcomebar">
+    <img src="./assets/images/welcome01.png" alt="Welcome to Into The Cosmos" class="logo">
+</div>
+<br>
+
+<div class="container">
+    <div class="row">
+        <div class="cell text-block">
+            <p>This is a weekly blog about human exploration of space. Human space flight has been confined to the Earth and the Moon since the 1960's but recent developments in technology look set to push the boundaries of where people can travel to. Humans landing on Mars, once seen as science fiction, could soon be a reality in many of our lifetimes. Human exploration of the solar system and beyond may not be as far away as we think.</p>
+            <br>
+            <p>Each week at Into The Cosmos, we will explore a different topic about human spaceflight and the exploration of our solar system. We will also look at the astounding advances in exploring space through unmanned vehicles and long distance observation. You can read posts by clicking on one of the entries below or on the Blog section of the navigation bar above.</p>        
+        </div>
+        <div class="cell video-block">
+            <video width="100%" controls autoplay loop>
+                <source src="./assets/videos/milkyway01.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+</div>
+<br>
+
+
+
+
+
+
+</body>
+</html>
